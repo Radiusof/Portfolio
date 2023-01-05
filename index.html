@@ -9,11 +9,12 @@
 <body id="stopScroll">
   <header>
         <nav class="nav-fixed">
-            <div >
+            <div>
                 <ul class="menu">
                     <!-- <li id="site-title"><h1 >Kevin Delattre</h1></li> -->
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio" >Projects</a></li>
+                    <li><a href="#veilletechno" >Veille Technologique</a></li>
                     <li><a href="#contacts" >Contacts</a></li>
                 </ul>
             </div>
@@ -33,30 +34,37 @@
   </header>
  <div class="main-screen">
      <section id="about" class="hidden">
-         <h2>
-             About Me
+         <h2 class="title-about">
+             A propos
          </h2>
 
          <!--<img src="img/Profil%20Pic.jpg" alt="Profil Picture"> -->
          <!-- <img src="https://yzgeneration.com/wp-content/uploads/2017/05/Carapuce-1.gif" alt="Profil Picture"> -->
+         <div>
+             <p class="description">
+                 Bonjour et Bienvenue!
+             </p> <br><br>
+             <p class="description">
+                 Je m'appelle Kevin Delattre, Etudiant développeur d'applications en alternance depuis 2 ans maintenant au
+                 Lacee Gaston Berger, (BTS SIO SLAM).
+                 Ayant commencé en auto-didacte puis ensuite retournés derrières les bancs de classes tout en étant
+                 embauchés par une jeune start-up. l'informatique fût une reconversion réussi.
+             </p> <br><br>
+             <p class="description"> Vous trouverez sur ce site tout mes projets personnels, scolaires ainsi que profesionnels.
+             </p> <br><br>
+             <p class="description">
+                 Vous pourrez également me contacter avec les différents lien mis à disposition en bas de page.
+             </p> <br><br>
+             <p class="description">
+                 Bonne visite !
+             </p> <br><br>
+         </div>
 
-         <p>
-
-             Hello There,
-             I'm Kevin Delattre, Software Developer for 2 years now.
-             Started as self-taught then gone back to school to learn even more,
-             programming was the best choice I made this past year.
-             Here, you'll find every project I worked on & what I'm currently doing.
-
-             Enjoy the visit!
-
-
-         </p>
      </section>
      <section id="portfolio">
          <div class="container" id="blur" >
 
-             <h2 class="content-child">Projects</h2>
+             <h2 class="content-child">Projets</h2>
              <div class="content-1">
                  <img class="image" src="img/Puissance4%20C++.png" alt="project1">
                  <button class="open-window middle" id="button-puissance4">Puissance 4</button>
@@ -76,47 +84,110 @@
          </div>
          <div id="project1-popup">
              <button class="close-window child" id="close1">&times;</button>
-             <h2 class="child">Connect 4</h2>
-             <p class="child">You can see the project at the following link: <br>
-                 <a href="https://github.com/Radiusof/Puissance4.git" title="Puissance4" target="_blank">Connect 4</a> </p> <br><br>
-             <p class="child">C++ Project made during my spare time, for 2 players.</p>
+             <h2 class="child">Puissance 4</h2>
+             <p class="child">Vous pouvez retrouver le projet sur le lien suivant: <br>
+                 <a href="https://github.com/Radiusof/Puissance4.git" title="Puissance4" target="_blank">Puissance 4</a> </p> <br><br>
+             <p class="child">Projet C++ effectué lors de ma montée en compétence avec ce langage, pour 2 joueurs en local.</p>
          </div>
          <div id="project2-popup">
              <button class="close-window child" id="close2">&times;</button>
              <h2 class="child">Beep Song</h2>
-             <p class="child">You can see the project at the following link: <br>
+             <p class="child">Vous pouvez retrouver le projet sur le lien suivant: <br>
                  <a href="https://github.com/Radiusof/BeepSong.git" title="Beep Song" target="_blank">Beep Song</a> </p> <br><br>
-             <p class="child">C++ project that generate music with the help of a .txt file that contains music notes.</p>
+             <p class="child">Projet C++ générant de la musique à partir d'un fichier .txt contenant une suite de note de musique (annotation anglaise).
+                 Elle utilise la bibliothèque d'alertes sons du processeur de l'ordinateur pour générer les sons.</p>
          </div>
          <div id="project3-popup">
              <button class="close-window child" id="close3">&times;</button>
              <h2 class="child">Virtual Piano</h2>
-             <p class="child">You can see the project at the following link: <br>
+             <p class="child">Vous pouvez retrouver le projet sur le lien suivant: <br>
                  <a href="https://github.com/Radiusof/Virtual-Piano.git" title="Virtual Piano" target="_blank">Virtual Piano</a> </p> <br><br>
-             <p class="child">JavaScript project showcasing an interactive virtual piano (with interactive title using css animation).</p>
+             <p class="child">Projet Javascript mettant à disposition un piano virtuel interactive (avec des animations css en bonus)</p>
          </div>
          <div id="project4-popup">
              <button class="close-window child" id="close4">&times;</button>
-             <h2 class="child">Datakhi Project</h2>
-             <p class="child">Contain various internal projects + client projects (currently not available)</p>
+             <h2 class="child">Projets à Datakhi</h2>
+
+             <ul class="child">
+                 <li><p>Powergit:</p>
+                     <p>Projet interne de développement d'un logiciel de versionning</p>
+                     <p>Backend: C++</p>
+                     <p>FrontEnd: NodeJS/React/Electron</p></li>
+                 <br>
+                 <li><p>Canon Medical:</p>
+                     <p>Création d'une solution de devis applicative</p>
+                     <p>Outils: Powerapps/Power Automate/ SharePoint/ Azure</p>
+                 </li>
+                 <br>
+                 <li><p>France Drilldown:</p>
+                     <p>Correctif de bug d'un projet en TypeScript</p></li>
+                 <br>
+                 <li><p>PowerShell Adeo:</p>
+                     <p>Déploiement d'un script permettant le backup automatique des rapports PowerBi du client</p></li>
+                 <br>
+             </ul>
          </div>
      </section>
+     <section id="veilletechno" class="hidden">
+         <h2 class="title-veille">
+             Veille Technologique
+         </h2>
 
+
+
+         <div>
+             <p class="veille-p">
+                 Ma veille technologique durant mes études s'est principalement arrêté sur plusieurs thématiques tournées
+                 autour des langages informatiques que nous utilisons au sein de notre entreprise.
+             </p> <br><br>
+             <p class="veille-p">
+                 Thématiques:
+             </p> <br><br>
+             <li><p class="veille-li">Carbon C++</p></li>
+             <br>
+             <li><p class="veille-li">ReactJS</p>
+             </li>
+             <br>
+             <li><p class="veille-li">Power Platform</p>
+            </li>
+             <br>
+             <p class="veille-p">
+                 Outils utilisés:
+             </p> <br><br>
+             <li><p class="veille-li">TLDR:</p>
+                 <p class="veille-li">Newsletter hebdomadaire synthétisant en une page les dernières nouvelles Tech et IT</p></li>
+             <br>
+             <li><p class="veille-li">Feedly:</p>
+                 <p class="veille-li">Agrégateur de contenu de flux, permet notamment de regrouper ses recherches par
+                     dossiers et de suivre les articles/sources les plus pertinentes.</p></li>
+             </li>
+             <br>
+             <li><p class="veille-li">Reddit:</p>
+                 <p class="veille-li">Forum de partage d'informations.
+                 Certaines sources doivent néanmoins être vérifiées avec plus d'assiduités.</p>
+             </li>
+
+         </div>
+
+
+     </section>
      <section id="contacts" class="hidden">
          <h2>
              Contacts :
          </h2>
-         <p>
-             <br> Email: kevin.delattre@gastonberger.fr <br>
-             <br> <a href="https://github.com/Radiusof" title="GitHub" target="_blank"><img src="img/icons8-github-32.png" alt="Github-Icon" style="width:50px;height:50px;"></a> <br><br>
-             <br> <a href="https://www.linkedin.com/in/kevin-delattre-97006172" title="LinkedIn" target="_blank"><img src="img/icons8-linkedin-32.png" alt="LinkedIn-Icon" style="width:50px;height:50px;"></a> <br><br>
-         </p>
+         <div>
+             <p>
+                 <br> Email: kevin.delattre@gastonberger.fr <br>
+                 <br> <a href="https://github.com/Radiusof" title="GitHub" target="_blank"><img src="img/icons8-github-32.png" alt="Github-Icon" style="width:50px;height:50px;"></a> <br><br>
+                 <br> <a href="https://www.linkedin.com/in/kevin-delattre-97006172" title="LinkedIn" target="_blank"><img src="img/icons8-linkedin-32.png" alt="LinkedIn-Icon" style="width:50px;height:50px;"></a> <br><br>
+             </p>
+         </div>
+
      </section>
  </div>
 
 </body>
 <footer>
-    <p>Additional information</p>
 </footer>
 
 </html>
