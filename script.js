@@ -53,6 +53,7 @@ let buttonPuissance4 = document.getElementById("button-puissance4");
 let buttonBeepsong = document.getElementById("button-beepsong");
 let buttonPiano = document.getElementById("button-virtualPiano");
 let buttonDevis = document.getElementById("button-Devis");
+let buttonCV = document.getElementById("button-CV");
 let close = document.getElementsByClassName("close-window");
 
 //Popup Variables
@@ -60,6 +61,7 @@ let popup1 = document.getElementById("project1-popup");
 let popup2 = document.getElementById("project2-popup");
 let popup3 = document.getElementById("project3-popup");
 let popup4 = document.getElementById("project4-popup");
+let popup5 = document.getElementById("project5-popup");
 let blur = document.getElementById("blur");
 let scroll = document.getElementById("stopScroll");
 
@@ -76,6 +78,7 @@ function hidePopup() {
     popup2.classList.remove("active");
     popup3.classList.remove("active");
     popup4.classList.remove("active");
+    popup5.classList.remove("active");
 }
 
 //onclick trigger
@@ -96,6 +99,11 @@ buttonPiano.addEventListener("click",() =>{
 buttonDevis.addEventListener("click",() =>{
     toggleBlur();
     popup4.classList.toggle("active");
+});
+
+buttonCV.addEventListener("click",() =>{
+    toggleBlur();
+    popup5.classList.toggle("active");
 });
 
 Array.from(close).forEach(function(element) {
