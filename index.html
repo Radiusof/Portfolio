@@ -1,196 +1,429 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:https="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:https="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Portfolio Kevin Delatttre</title>
+    <title>Portfolio Kevin Delattre</title>
     <script defer src="script.js"></script>
 </head>
+
 <body id="stopScroll">
-  <header>
-        <nav class="nav-fixed">
+    <div class="wrapper">
+        <header>
+
+            <nav class="nav-fixed">
                 <ul class="menu">
                     <!-- <li id="site-title"><h1 >Kevin Delattre</h1></li> -->
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#skills">Compétences</a></li>
                     <li><a href="#veilletechno">Veille Technologique</a></li>
                     <li><a href="#contacts">Contacts</a></li>
                 </ul>
-      </nav>
-      <section class="hidden">
-          <div class="title">
-              <div >
-                  <h1 id="site-title" >Portfolio</h1>
-              </div>
-              <div >
-                  <h2 id="sub-site-title" >Kevin Delattre</h2>
-              </div>
-          </div>
-      </section>
+            </nav>
+            <section class="hidden">
+                <div class="title">
+                    <div>
+                        <h1 id="site-title">Portfolio</h1>
+                    </div>
+                    <div>
+                        <h2 id="sub-site-title">Kevin Delattre</h2>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <div class="main-screen">
+            <section id="about" class="hidden">
+                <h2 class="title-about">
+                    A propos
+                </h2>
+                <div>
+                    <p class="description">
+                        Bonjour et Bienvenue!
+                    </p> <br><br>
+                    <p class="description">
+                        Je m'appelle Kevin Delattre, Etudiant développeur d'applications en alternance depuis 2 ans maintenant au Lycée Gaston Berger, (BTS SIO SLAM). Ayant commencé en auto-didacte pour ensuite retourner derrières les bancs de l'école tout en étant embauché
+                        par une jeune start-up, l'informatique fût une reconversion réussie.
+                    </p> <br><br>
+                    <p class="description"> Vous trouverez sur ce site tous mes projets personnels, scolaires ainsi que professionnelles.
+                    </p> <br><br>
+                    <p class="description"> Vous trouverez également la grille d'évaluation de BTS SIO SLAM 2022-2023 afin d'illustrer mes différentes compétences acquéries durant mes 2 années d'études.
+                    </p> <br><br>
+                    <p class="description">
+                        Vous pourrez enfin me contacter avec les différents liens mis à disposition en bas de page.
+                    </p> <br><br>
+                    <p class="description">
+                        Bonne visite !
+                    </p> <br><br>
+                </div>
 
-  </header>
- <div class="main-screen">
-     <section id="about" class="hidden">
-         <h2 class="title-about">
-             A propos
-         </h2>
-         <div>
-             <p class="description">
-                 Bonjour et Bienvenue!
-             </p> <br><br>
-             <p class="description">
-                 Je m'appelle Kevin Delattre, Etudiant développeur d'applications en alternance depuis 2 ans maintenant au
-                 Lycée Gaston Berger, (BTS SIO SLAM).
-                 Ayant commencé en auto-didacte pour ensuite retourner derrières les bancs de l'école tout en étant
-                 embauché par une jeune start-up, l'informatique fût une reconversion réussie.
-             </p> <br><br>
-             <p class="description"> Vous trouverez sur ce site tous mes projets personnels, scolaires ainsi que professionnelles.
-             </p> <br><br>
-             <p class="description"> Vous trouverez également la grille d'évaluation de BTS SIO SLAM 2022-2023 afin
-                 d'illustrer mes différentes compétences acquéries durant mes 2 années d'études.
-             </p> <br><br>
-             <p class="description">
-                 Vous pourrez enfin me contacter avec les différents liens mis à disposition en bas de page.
-             </p> <br><br>
-             <p class="description">
-                 Bonne visite !
-             </p> <br><br>
-         </div>
+            </section>
+            <section id="portfolio" class="hidden">
 
-     </section>
-     <section id="portfolio">
-         <div class="container" id="blur" >
+                <div class="container" id="blur">
+                    <h2 class="content-child titleproject  ">Projets</h2>
+                    <div class="content-1">
+                        <img class="image" src="img/Puissance4%20C++.png" alt="project1">
+                        <button class="open-window middle" id="button-puissance4">Puissance 4</button>
+                    </div>
+                    <div class="content-2">
+                        <img class="image" src="img/beepsong.jpg" alt="project2">
+                        <button class="open-window middle" id="button-beepsong">Beep Song</button>
+                    </div>
+                    <div class="content-3">
+                        <img class="image" src="img/Virtual%20Piano.png" alt="project3">
+                        <button class="open-window middle" id="button-virtualPiano">Virtual Piano</button>
+                    </div>
+                    <div class="content-4">
+                        <img class="image" src="img/Powerappspng.png" alt="project4">
+                        <button class="open-window middle" id="button-Devis">Outil de Devis</button>
+                    </div>
+                    <div class="content-5">
+                        <img class="image" src="img/resume.jpg" alt="project5">
+                        <button class="open-window middle" id="button-CV">C.V</button>
+                    </div>
+                </div>
+                <div id="project1-popup">
+                    <button class="close-window child" id="close1">&times;</button>
+                    <h2 class="child">Puissance 4</h2>
+                    <p class="child">Vous pouvez retrouver le projet sur le lien suivant: <br>
+                        <a href="https://github.com/Radiusof/Puissance4.git" title="Puissance4" target="_blank">Puissance 4</a> <br><br> Projet C++ effectué lors de ma montée en compétence avec ce langage, pour 2 joueurs en local.</p>
+                </div>
+                <div id="project2-popup">
+                    <button class="close-window child" id="close2">&times;</button>
+                    <h2 class="child">Beep Song</h2>
+                    <p class="child">Vous pouvez retrouver le projet sur le lien suivant: <br>
+                        <a href="https://github.com/Radiusof/BeepSong.git" title="Beep Song" target="_blank">Beep Song</a> <br><br> Projet C++ générant de la musique à partir d'un fichier .txt contenant une suite de note de musique (annotation anglaise).
+                        Elle utilise la bibliothèque d'alertes sons du processeur de l'ordinateur pour générer les sons.</p>
+                </div>
+                <div id="project3-popup">
+                    <button class="close-window child" id="close3">&times;</button>
+                    <h2 class="child">Virtual Piano</h2>
+                    <p class="child">Vous pouvez retrouver le projet sur le lien suivant: <br>
+                        <a href="https://github.com/Radiusof/Virtual-Piano.git" title="Virtual Piano" target="_blank">Virtual Piano</a> <br><br> Projet Javascript mettant à disposition un piano virtuel interactive (avec des animations css en bonus)</p>
+                </div>
+                <div id="project4-popup">
+                    <button class="close-window child" id="close4">&times;</button>
+                    <h2 class="child">Projets à Datakhi</h2>
 
-             <h2 class="content-child">Projets</h2>
-             <div class="content-1">
-                 <img class="image" src="img/Puissance4%20C++.png" alt="project1">
-                 <button class="open-window middle" id="button-puissance4">Puissance 4</button>
-             </div>
-             <div class="content-2">
-                 <img class="image" src="img/beepsong.jpg" alt="project2">
-                 <button class="open-window middle" id="button-beepsong">Beep Song</button>
-             </div>
-             <div class="content-3">
-                 <img class="image" src="img/Virtual%20Piano.png" alt="project3">
-                 <button class="open-window middle" id="button-virtualPiano">Virtual Piano</button>
-             </div>
-             <div class="content-4">
-                 <img class="image" src="img/Powerappspng.png" alt="project4">
-                     <button class="open-window middle" id="button-Devis">Outil de Devis</button>
-             </div>
-             <div class="content-5">
-                 <img class="image" src="img/resume.jpg" alt="project5">
-                 <button class="open-window middle" id="button-CV">C.V</button>
-             </div>
-         </div>
-         <div id="project1-popup">
-             <button class="close-window child" id="close1">&times;</button>
-             <h2 class="child">Puissance 4</h2>
-             <p class="child">Vous pouvez retrouver le projet sur le lien suivant: <br>
-                 <a href="https://github.com/Radiusof/Puissance4.git" title="Puissance4" target="_blank">Puissance 4</a> <br><br>
-             Projet C++ effectué lors de ma montée en compétence avec ce langage, pour 2 joueurs en local.</p>
-         </div>
-         <div id="project2-popup">
-             <button class="close-window child" id="close2">&times;</button>
-             <h2 class="child">Beep Song</h2>
-             <p class="child">Vous pouvez retrouver le projet sur le lien suivant: <br>
-                 <a href="https://github.com/Radiusof/BeepSong.git" title="Beep Song" target="_blank">Beep Song</a> <br><br>
-             Projet C++ générant de la musique à partir d'un fichier .txt contenant une suite de note de musique (annotation anglaise).
-                 Elle utilise la bibliothèque d'alertes sons du processeur de l'ordinateur pour générer les sons.</p>
-         </div>
-         <div id="project3-popup">
-             <button class="close-window child" id="close3">&times;</button>
-             <h2 class="child">Virtual Piano</h2>
-             <p class="child">Vous pouvez retrouver le projet sur le lien suivant: <br>
-                 <a href="https://github.com/Radiusof/Virtual-Piano.git" title="Virtual Piano" target="_blank">Virtual Piano</a> <br><br>
-                Projet Javascript mettant à disposition un piano virtuel interactive (avec des animations css en bonus)</p>
-         </div>
-         <div id="project4-popup">
-             <button class="close-window child" id="close4">&times;</button>
-             <h2 class="child">Projets à Datakhi</h2>
+                    <ul class="child">
+                        <li>
+                            <p>Powergit:</p>
+                            <p>Projet interne de développement d'un logiciel de versionning</p>
+                            <p>Backend: C++</p>
+                            <p>FrontEnd: NodeJS/React/Electron</p> <br></li>
 
-             <ul class="child">
-                 <li><p>Powergit:</p>
-                     <p>Projet interne de développement d'un logiciel de versionning</p>
-                     <p>Backend: C++</p>
-                     <p>FrontEnd: NodeJS/React/Electron</p> <br></li>
+                        <li>
+                            <p>Canon Medical:</p>
+                            <p>Création d'une solution de devis applicative</p>
+                            <p>Outils: Powerapps/Power Automate/ SharePoint/ Azure</p> <br>
+                        </li>
 
-                 <li><p>Canon Medical:</p>
-                     <p>Création d'une solution de devis applicative</p>
-                     <p>Outils: Powerapps/Power Automate/ SharePoint/ Azure</p> <br>
-                 </li>
+                        <li>
+                            <p>France Drilldown:</p>
+                            <p>Correctif de bug d'un projet en TypeScript</p> <br></li>
 
-                 <li><p>France Drilldown:</p>
-                     <p>Correctif de bug d'un projet en TypeScript</p> <br></li>
+                        <li>
+                            <p>PowerShell Adeo:</p>
+                            <p>Déploiement d'un script permettant le backup automatique des rapports PowerBi du client</p><br></li>
+                    </ul>
+                </div>
+                <div id="project5-popup">
+                    <button class="close-window child" id="close5">&times;</button>
+                    <h2 class="child">C.V</h2>
+                    <p class="child">Vous pouvez retrouver mon cv sur ce lien: <br>
+                        <a href="img/Profile.pdf" download="img/Profile.pdf" title="CV" target="_blank">CV</a> <br><br>
+                    </p>
+                </div>
+            </section>
+            <section id="skills" class="hidden">
+                <h2 class="title-skills">
+                    Compétences
+                </h2>
+                <br>
+                <div class="skills-bar">
+                    <p>
+                        Chacune des compétences présentées çi-dessous ont été acquise grace à l'un des projets présentés précédemment.
+                    </p>
 
-                 <li><p>PowerShell Adeo</p>
-                     <p>Déploiement d'un script permettant le backup automatique des rapports PowerBi du client</p><br></li>
-             </ul>
-         </div>
-         <div id="project5-popup">
-             <button class="close-window child" id="close5">&times;</button>
-             <h2 class="child">C.V</h2>
-             <p class="child">Vous pouvez retrouver mon cv sur ce lien: <br>
-                 <a href="img/Profile.pdf" download="img/Profile.pdf" title="CV" target="_blank">CV</a> <br><br>
-             </p>
-         </div>
-     </section>
-     <section id="veilletechno" class="hidden">
-         <h2 class="title-veille">
-             Veille Technologique
-         </h2>
+                    <div class="bar">
+                        <div class="info">
+                            <span><label for="check-patrimoine">Gérer le patrimoine informatique</label></span>
+                            <input type="checkbox" id="check-patrimoine">
+                            <div class="content-patrimoine">
+
+                                <p class="p-showmore">
+                                    IDKids: </p>
+                                <br>
+                                <ul>
+                                    <li class="skill-li">
+                                        <p class="main-skill">Exploiter des référentiels, normes et standards adoptés par le prestataire informatique</p>
+                                        <p class="detail-skill">Montée en compétence en arrivant en clientéle (<a href="https://www.conventionalcommits.org/fr/v1.0.0/" target="_blank">Norme Git</a>, Structure de code normée, Hierarchisation d'équipe, Logiciels utilisés) </p>
+                                    </li>
+                                </ul>
+                                <br>
+                                <p class="p-showmore">
+                                    Canon Médical: </p>
+                                <br>
+                                <ul>
+                                    <li class="skill-li">
+                                        <p class="main-skill">Mettre en place et vérifier les niveaux d’habilitation associés à un service</p>
+                                        <p class="detail-skill">Gestion des différents droits utilisateurs via SharePoint List, Azure AD & PowerApps</p>
+                                    </li>
+                                    <li class="skill-li">
+                                        <p class="main-skill">Vérifier les conditions de la continuité d’un service informatique</p>
+                                        <p class="detail-skill">Mise en place de flux automatisés vérifiant le statut du canvas PowerApps </p>
+                                    </li>
+                                    <li class="skill-li">
+                                        <p class="main-skill">Gérer des sauvegardes</p>
+                                        <p class="detail-skill">Possibilité de sauvegarder / charger sa configuration de Devis ou celle d'un autre utilisateur si Administrateur. </p>
+                                    </li>
+                                </ul>
+                                <br>
+                                <p class="p-showmore">
+                                    CRA: </p>
+                                <br>
+                                <ul>
+                                    <li class="skill-li">
+                                        <p class="main-skill">Vérifier le respect des règles d’utilisation des ressources numériques</p>
+                                        <p class="detail-skill"> Avertissements / message d'erreurs si un utilisateur effectue une mauvaise manipulation sur la saisie des temps </p>
+                                    </li>
+                                </ul>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="progress-line patrimoine"><span></span></div>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span><label for="check-incident">Répondre aux incidents et aux demandes d’assistance et d’évolution</label></span>
+                            <input type="checkbox" id="check-incident">
+                            <div class="content-incident">
+
+                                <p class="p-showmore">
+                                    Canon Médical: </p>
+                                <br>
+                                <ul>
+                                    <li class="skill-li">
+                                        <p class="main-skill">Collecter, suivre et orienter des demandes</p>
+                                        <p class="detail-skill">Réunion hebdomadaires avec les responsables de projets afin de définir les corrections et évolutions à appliquer .</p>
+                                    </li>
+                                    <li class="skill-li">
+                                        <p class="main-skill">Traiter des demandes concernant les services réseau et système, applicatifs</p>
+                                        <p class="detail-skill"> Résolution de problémes de connection au canvas que l'utilisateur pouvait rencontrer.</p>
+                                    </li>
+                                    <li class="skill-li">
+                                        <p class="main-skill">Traiter des demandes concernant les applications</p>
+                                        <p class="detail-skill">Après avoir défini les demandes d'évolutions, une analyse du temps nécessaire à sa mise en place est effectué, puis réalisé sous la supervision du chef de projet.</p>
+                                    </li>
+                                </ul>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="progress-line incident"><span></span></div>
+                        <br>
+                        <br>
+
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span><label for="check-devweb">Développer la présence en ligne de l’organisation</label></span>
+                            <input type="checkbox" id="check-devweb">
+                            <div class="content-devweb">
+
+                                <p class="p-showmore">
+                                    Datakhi: </p>
+                                <br>
+                                <ul>
+                                    <li class="skill-li">
+                                        <p class="main-skill">Participer à la valorisation de l’image de l’organisation sur les médias numériques en tenant compte du cadre juridique et des enjeux économiques</p>
+                                        <p class="detail-skill">Support (partage,like) de la plupart des post LinkedIn déposé par la société.</p>
+                                    </li>
+                                </ul>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="progress-line devweb"><span></span></div>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span><label for="check-modeprojet">Travailler en mode projet</label></span>
+                            <input type="checkbox" id="check-modeprojet">
+                            <div class="content-modeprojet">
+
+                                <p class="p-showmore">
+                                    PowerGit: </p>
+                                <br>
+                                <ul>
+                                    <li class="skill-li">
+                                        <p class="main-skill">Analyser les objectifs et les modalités d’organisation d’un projet</p>
+                                        <p class="detail-skill">Pour la partie Backend, atomisation de la création de la structure en plusieurs parties de l'application en C++.</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="skill-li">
+                                        <p class="main-skill">Planifier les activités</p>
+                                        <p class="detail-skill">Trello utilisé lors du développement backend afin d'assurer un suivi et une planification en équipe.</p>
+                                    </li>
+                                </ul>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="progress-line modeprojet"><span></span></div>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span><label for="check-service">Mettre à disposition des utilisateurs un service informatique</label></span>
+                            <input type="checkbox" id="check-service">
+                            <div class="content-service">
+
+                                <p class="p-showmore">
+                                    IdKids: </p>
+                                <br>
+                                <ul>
+                                    <li class="skill-li">
+                                        <p class="main-skill">Réaliser les tests d’intégration et d’acceptation d’un service</p>
+                                        <p class="detail-skill">Série de Test Unitaires à effectuer via Jest et Husky avant de Commit un projet API.</p>
+                                    </li>
+                                </ul>
+                                <p class="p-showmore">
+                                    PowerApps: </p>
+                                <br>
+                                <ul>
+                                    <li class="skill-li">
+                                        <p class="main-skill">Déployer un service</p>
+                                        <p class="detail-skill">Déploiement de l'application PowerApps en Février 2023</p>
+                                    </li>
+                                    <li class="skill-li">
+                                        <p class="main-skill">Accompagner les utilisateurs dans la mise en place d’un service</p>
+                                        <p class="detail-skill">Une journée par mois dédié à d'éventuels correctifs/évolutions de l'application.</p>
+                                    </li>
+                                </ul>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="progress-line service"><span></span></div>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span><label for="check-orga">Organiser son développement professionnel</label></span>
+                            <input type="checkbox" id="check-orga">
+                            <div class="content-orga">
+
+                                <p class="p-showmore">
+                                    IdKids: </p>
+                                <br>
+                                <ul>
+                                    <li class="skill-li">
+                                        <p class="main-skill">Mettre en place son environnement d’apprentissage personnel</p>
+                                        <p class="detail-skill">Installation et apprentissage des nouveaux outils fournis lors de mon arrivé chez IdKids.</p>
+                                    </li>
+                                </ul>
+                                <p class="p-showmore">
+                                    Personnel: </p>
+                                <br>
+                                <ul>
+                                    <li class="skill-li">
+                                        <p class="main-skill">Mettre en œuvre des outils et stratégies de veille informationnelle</p>
+                                        <p class="detail-skill">Mise en place de régles sur ma boite mail Tutanota ainsi que sur divers sites afin d'assurer ma veille technologique (Voir <a href="#veilletechno">Veille Technologique</a>)</p>
+                                    </li>
+                                    <li class="skill-li">
+                                        <p class="main-skill">Gérer son identité professionnelle</p>
+                                        <p class="detail-skill">Création d'un profil LinkedIn et GitHub (voir
+                                            <a href="#contacts">Contacts</a>)
+                                        </p>
+                                    </li>
+                                    <li class="skill-li">
+                                        <p class="main-skill">Développer son projet professionnel</p>
+                                        <p class="detail-skill">Nombreux projets personneles effectués afin de monter en compétence (Voir <a href="#portfolio">Projects</a> )
+                                        </p>
+                                    </li>
+                                </ul>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="progress-line orga"><span></span></div>
+                        <br>
+                        <br>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="veilletechno" class="hidden">
+                <h2 class="title-veille">
+                    Veille Technologique
+                </h2>
+                <br>
+                <div>
+                    <p class="veille-p">
+                        Ma veille technologique durant mes études s'est principalement arrêté sur plusieurs thématiques tournées autour des langages informatiques que nous utilisons au sein de notre entreprise, néanmoins une technologie ressortait du lot.
+                    </p> <br><br>
+                    <p class="veille-p">
+                        Thématique:
+                    </p> <br>
+                    <ul>
+                        <li>
+                            <p class="veille-li">Power Platform</p> <br>
+                        </li>
+                    </ul>
+                    <p class="veille-p">
+                        Outils utilisés:
+                    </p> <br>
+                    <ul>
+                        <li>
+                            <p class="veille-li">TLDR:</p>
+
+                            <p class="veille-li">Newsletter hebdomadaire synthétisant en une page les dernières nouvelles Tech et IT</p>
+                        </li>
+
+                        <li>
+                            <p class="veille-li">Feedly:</p>
+                            <p class="veille-li">Agrégateur de contenu de flux, permet notamment de regrouper ses recherches par dossiers et de suivre les articles/sources les plus pertinentes.</p>
+                        </li>
+
+                        <li>
+                            <p class="veille-li">Reddit:</p>
+                            <p class="veille-li">Forum de partage d'informations. Certaines sources doivent néanmoins être vérifiées avec plus d'assiduités.</p>
+                        </li>
+                    </ul>
+                </div>
 
 
+            </section>
+            <section id="contacts" class="hidden">
+                <h2 class="title-contact">
+                    Contacts
+                </h2>
+                <div>
+                    <p>
+                        <br> Email: kevin.delattre@gastonberger.fr <br>
+                        <br>
+                        <a href="https://github.com/Radiusof" title="GitHub" target="_blank"><img src="img/icons8-github-32.png" alt="Github-Icon" style="width:50px;height:50px;"></a> <br><br>
+                        <br>
+                        <a href="https://www.linkedin.com/in/kevin-delattre-97006172" title="LinkedIn" target="_blank"><img src="img/icons8-linkedin-32.png" alt="LinkedIn-Icon" style="width:50px;height:50px;"></a> <br><br>
+                    </p>
+                </div>
 
-         <div>
-             <p class="veille-p">
-                 Ma veille technologique durant mes études s'est principalement arrêté sur plusieurs thématiques tournées
-                 autour des langages informatiques que nous utilisons au sein de notre entreprise, néanmoins une technologie
-                 ressortait du lot.
-             </p> <br><br>
-             <p class="veille-p">
-                 Thématique:
-             </p> <br>
-             <ul>
-                 <li><p class="veille-li">Power Platform</p> <br>
-                 </li>
-             </ul>
-             <p class="veille-p">
-                     Outils utilisés:
-             </p> <br>
-             <ul>
-                 <li><p class="veille-li">TLDR:</p>
-
-                     <p class="veille-li">Newsletter hebdomadaire synthétisant en une page les dernières nouvelles Tech et IT</p></li>
-
-                 <li><p class="veille-li">Feedly:</p>
-                     <p class="veille-li">Agrégateur de contenu de flux, permet notamment de regrouper ses recherches par
-                         dossiers et de suivre les articles/sources les plus pertinentes.</p></li>
-
-                 <li><p class="veille-li">Reddit:</p>
-                     <p class="veille-li">Forum de partage d'informations.
-                         Certaines sources doivent néanmoins être vérifiées avec plus d'assiduités.</p>
-                 </li>
-             </ul>
-         </div>
-
-
-     </section>
-     <section id="contacts" class="hidden">
-         <h2>
-             Contacts :
-         </h2>
-         <div>
-             <p>
-                 <br> Email: kevin.delattre@gastonberger.fr <br>
-                 <br> <a href="https://github.com/Radiusof" title="GitHub" target="_blank"><img src="img/icons8-github-32.png" alt="Github-Icon" style="width:50px;height:50px;"></a> <br><br>
-                 <br> <a href="https://www.linkedin.com/in/kevin-delattre-97006172" title="LinkedIn" target="_blank"><img src="img/icons8-linkedin-32.png" alt="LinkedIn-Icon" style="width:50px;height:50px;"></a> <br><br>
-             </p>
-         </div>
-
-     </section>
- </div>
-
+            </section>
+        </div>
+    </div>
 </body>
 <footer>
 </footer>
