@@ -1,7 +1,6 @@
 //////////////// HEADER ////////////////
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
         if (entry.isIntersecting) {
             entry.target.classList.toggle('show', entry.isIntersecting);
         } else {
@@ -16,12 +15,8 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 const nav = document.querySelector('nav');
 
-
-
-
 window.addEventListener('scroll', () => {
     let getscroll = window.scrollY;
-    console.log(getscroll);
     switch (true) {
         case (getscroll >= 905) && (getscroll <= 1699):
             nav.classList.add('active_nav_1');
