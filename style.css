@@ -72,6 +72,7 @@ li {
 }
 
 .title-about,
+.title-entreprise,
 .title-veille,
 .title-contact,
 .title-skills {
@@ -151,7 +152,8 @@ footer {
 .content-2:hover .image,
 .content-3:hover .image,
 .content-4:hover .image,
-.content-5:hover .image {
+.content-5:hover .image,
+.content-6:hover .image {
     opacity: 0.3;
     transition: 300ms;
 }
@@ -160,7 +162,8 @@ footer {
 .content-2:hover .middle,
 .content-3:hover .middle,
 .content-4:hover .middle,
-.content-5:hover .middle {
+.content-5:hover .middle,
+.content-6:hover .middle {
     opacity: 1;
     transition: 250ms;
 }
@@ -182,7 +185,8 @@ footer {
 .container .content-2,
 .container .content-3,
 .container .content-4,
-.container .content-5 {
+.container .content-5,
+.container .content-6 {
     position: relative;
     max-width: 800px;
 }
@@ -191,7 +195,8 @@ footer {
 #project2-popup,
 #project3-popup,
 #project4-popup,
-#project5-popup {
+#project5-popup,
+#project6-popup {
     position: fixed;
     display: flex;
     top: 40%;
@@ -214,7 +219,8 @@ footer {
 #project2-popup.active,
 #project3-popup.active,
 #project4-popup.active,
-#project5-popup.active {
+#project5-popup.active,
+#project6-popup.active {
     top: 50%;
     visibility: visible;
     opacity: 1;
@@ -225,7 +231,8 @@ footer {
 #project2-popup h2,
 #project3-popup h2,
 #project4-popup h2,
-#project5-popup h2 {
+#project5-popup h2,
+#project6-popup h2 {
     font-weight: 600;
     margin-bottom: 10px;
     color: #333;
@@ -236,7 +243,8 @@ footer {
 .container .content-2 img,
 .container .content-3 img,
 .container .content-4 img,
-.container .content-5 img {
+.container .content-5 img,
+.container .content-6 img {
     max-width: 100%;
     display: block;
     border: 1px solid grey;
@@ -252,7 +260,8 @@ footer {
 #button-beepsong,
 #button-virtualPiano,
 #button-Devis,
-#button-CV {
+#button-CV,
+#button-Idkids {
     position: absolute;
     top: 50%;
     left: 53%;
@@ -273,7 +282,8 @@ footer {
 #button-beepsong:hover,
 #button-virtualPiano:hover,
 #button-Devis:hover,
-#button-CV:hover {
+#button-CV:hover,
+#button-Idkids:hover {
     background-color: whitesmoke;
     color: black;
     transition: 250ms;
@@ -283,7 +293,8 @@ footer {
 #project2-popup.child,
 #project3-popup.child,
 #project4-popup.child,
-#project5-popup.child {
+#project5-popup.child,
+#project6-popup.child {
     display: inline-block;
     font-size: 20px;
     color: #FFF;
