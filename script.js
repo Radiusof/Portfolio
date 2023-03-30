@@ -28,7 +28,7 @@ window.addEventListener('scroll', () => {
             nav.classList.remove('active_nav_1');
             nav.classList.remove('active_nav_3');
             break;
-        case (getscroll >= 1900):
+        case (getscroll >= 2900):
             nav.classList.add('active_nav_3');
             nav.classList.remove('active_nav_1');
             nav.classList.remove('active_nav_2');
