@@ -50,6 +50,7 @@ let buttonPiano = document.getElementById("button-virtualPiano");
 let buttonDevis = document.getElementById("button-Devis");
 let buttonId = document.getElementById("button-Idkids")
 let buttonCV = document.getElementById("button-CV");
+let buttonSchool = document.getElementById("button-School");
 let close = document.getElementsByClassName("close-window");
 
 //Popup Variables
@@ -59,6 +60,7 @@ let popup3 = document.getElementById("project3-popup");
 let popup4 = document.getElementById("project4-popup");
 let popup5 = document.getElementById("project5-popup");
 let popup6 = document.getElementById("project6-popup");
+let popup7 = document.getElementById("project7-popup");
 let blur = document.getElementById("blur");
 let scroll = document.getElementById("stopScroll");
 
@@ -77,6 +79,7 @@ function hidePopup() {
     popup4.classList.remove("active");
     popup5.classList.remove("active");
     popup6.classList.remove("active");
+    popup7.classList.remove("active");
 }
 
 //onclick trigger
@@ -103,9 +106,13 @@ buttonId.addEventListener("click", () => {
     toggleBlur();
     popup5.classList.toggle("active");
 });
-buttonCV.addEventListener("click", () => {
+buttonSchool.addEventListener("click", () => {
     toggleBlur();
     popup6.classList.toggle("active");
+});
+buttonCV.addEventListener("click", () => {
+    toggleBlur();
+    popup7.classList.toggle("active");
 });
 
 Array.from(close).forEach(function(element) {
