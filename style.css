@@ -98,6 +98,27 @@ li {
     font-family: 'Montserrat', sans-serif;
 }
 
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
 .main-screen {
     background: #30E8BF;
     /* fallback for old browsers */
@@ -186,7 +207,8 @@ footer {
 .container .content-3,
 .container .content-4,
 .container .content-5,
-.container .content-6 {
+.container .content-6,
+.container .content-7 {
     position: relative;
     max-width: 800px;
 }
@@ -196,7 +218,8 @@ footer {
 #project3-popup,
 #project4-popup,
 #project5-popup,
-#project6-popup {
+#project6-popup,
+#project7-popup{
     position: fixed;
     display: flex;
     top: 40%;
@@ -220,7 +243,8 @@ footer {
 #project3-popup.active,
 #project4-popup.active,
 #project5-popup.active,
-#project6-popup.active {
+#project6-popup.active,
+#project7-popup.active {
     top: 50%;
     visibility: visible;
     opacity: 1;
@@ -232,7 +256,8 @@ footer {
 #project3-popup h2,
 #project4-popup h2,
 #project5-popup h2,
-#project6-popup h2 {
+#project6-popup h2,
+#project7-popup h2 {
     font-weight: 600;
     margin-bottom: 10px;
     color: #333;
@@ -244,7 +269,8 @@ footer {
 .container .content-3 img,
 .container .content-4 img,
 .container .content-5 img,
-.container .content-6 img {
+.container .content-6 img,
+.container .content-7 img {
     max-width: 100%;
     display: block;
     border: 1px solid grey;
@@ -261,7 +287,8 @@ footer {
 #button-virtualPiano,
 #button-Devis,
 #button-CV,
-#button-Idkids {
+#button-Idkids,
+#button-School {
     position: absolute;
     top: 50%;
     left: 53%;
@@ -283,7 +310,8 @@ footer {
 #button-virtualPiano:hover,
 #button-Devis:hover,
 #button-CV:hover,
-#button-Idkids:hover {
+#button-Idkids:hover,
+#button-School:hover {
     background-color: whitesmoke;
     color: black;
     transition: 250ms;
@@ -294,7 +322,8 @@ footer {
 #project3-popup.child,
 #project4-popup.child,
 #project5-popup.child,
-#project6-popup.child {
+#project6-popup.child,
+#project7-popup.child{
     display: inline-block;
     font-size: 20px;
     color: #FFF;
