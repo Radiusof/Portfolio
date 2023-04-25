@@ -174,7 +174,8 @@ footer {
 .content-3:hover .image,
 .content-4:hover .image,
 .content-5:hover .image,
-.content-6:hover .image {
+.content-6:hover .image,
+.content-7:hover .image{
     opacity: 0.3;
     transition: 300ms;
 }
@@ -184,7 +185,8 @@ footer {
 .content-3:hover .middle,
 .content-4:hover .middle,
 .content-5:hover .middle,
-.content-6:hover .middle {
+.content-6:hover .middle,
+.content-7:hover .middle{
     opacity: 1;
     transition: 250ms;
 }
