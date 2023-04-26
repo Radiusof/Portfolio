@@ -35,6 +35,14 @@ section {
     min-width: 100vw;
 }
 
+#Gallerie{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 0px;
+}
+}
 #about h2 {
     margin: 0 0 110px 0;
     font-size: 40px;
@@ -75,7 +83,9 @@ li {
 .title-entreprise,
 .title-veille,
 .title-contact,
-.title-skills {
+.title-skills,
+.title-gallerie
+{
     margin-left: auto;
     margin-right: auto;
     padding: 40px 10px 0 0;
