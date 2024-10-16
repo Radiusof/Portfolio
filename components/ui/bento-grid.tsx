@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { cn } from '@/lib/utils';
 import { BackgroundGradientAnimation } from './background-gradient-animation';
 
@@ -21,6 +22,7 @@ export const BentoGrid = ({
 };
 
 //TODO timeframe 1:02:20
+console.log(`test log git`+JSON.stringify('log git', undefined, 4));
 
 export const BentoGridItem = ({
   className,
@@ -59,7 +61,10 @@ export const BentoGridItem = ({
             <img
               src={img}
               alt={img}
-              className={cn(imgClassName, 'object-cover object-center')}
+              className={cn(
+                imgClassName,
+                'object-cover object-center w-full h-full rounded-3xl',
+              )}
             />
           )}
         </div>
@@ -72,7 +77,7 @@ export const BentoGridItem = ({
             <img
               src={spareImg}
               alt={spareImg}
-              className={'object-cover object-center w-full h-full'}
+              className={'object-cover object-center w-full h-full rounded-3xl'}
             />
           )}
         </div>
